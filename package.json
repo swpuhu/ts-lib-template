@@ -20,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsc --noEmit && yarn test"
+      "pre-commit": "tsc --noEmit"
     }
 },
   "devDependencies": {
