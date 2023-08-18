@@ -1,0 +1,18 @@
+stages:
+    - publish
+
+before_script:
+    - node -v
+    - pnpm install
+    - pnpm test
+publish:
+    stage: publish
+    variables:
+        GITLAB_TOKEN: oSGLxXUrP4dzD3j2zbgy
+    script:
+        - pnpm build
+        - pnpm semantic-release
+    only:
+        - master
+    except:
+        - tags

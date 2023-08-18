@@ -1,0 +1,13 @@
+library/
+temp/
+local/
+build/
+.vscode/
+node_modules/
+dist/
+public/
+.nyc_output/
+coverage/
+data
+yarn-error.log
+stats.html
